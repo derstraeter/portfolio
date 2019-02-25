@@ -6,7 +6,8 @@
 
 body {
   background: #F7FCFF;
-  background-image: url(../svg/Zeichenfläche\ 1.svg);
+  background-image: url(../svg/bg.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -25,8 +26,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 2em;
-  justify-content: center;
-  margin: 4em 32%;
+  margin: auto;
+  margin-top: 3rem;
   width: 580px;
 }
 
@@ -35,9 +36,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
-  width: 200px;
   border-radius: 100%;
+  width: 150px;
+  max-height: 150px;
 }
 
 /* .hero-text-wrapper {
@@ -70,7 +71,7 @@ body {
 nav {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 4rem;
   text-align: center;
 }
@@ -114,7 +115,7 @@ nav {
 .timeline::before {
   content: "";
   border: 1px solid #223344;
-  height: 60%;
+  height: 20em;
   position: absolute;
   left: 7%;
 }
