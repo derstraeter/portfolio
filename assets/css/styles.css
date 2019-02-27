@@ -7,7 +7,7 @@
 body {
   background: #F7FCFF;
   background-image: url(../svg/bg.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -110,6 +110,7 @@ nav {
 
 .content-wrapper {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .cv-card {
@@ -143,7 +144,7 @@ nav {
   border-radius: 100%;
   background: #fff;
   margin-top: 0.2em;
-  margin-left: 7.7rem;
+  margin-left: 13.6rem;
   left: 0;
 }
 
