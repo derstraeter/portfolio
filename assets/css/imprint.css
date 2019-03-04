@@ -12,13 +12,13 @@ body {
   background-position: center;
 }
 
-h2 {
-  margin-bottom: 0;
-}
-
 span {
   color: #335c81;
   font-size: 14px;
+}
+
+a {
+  display: block;
 }
 
 .box-shadow {
@@ -62,56 +62,19 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.portfolio-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 4rem;
+  background: white;
   padding: 4rem;
-  max-width: 710px;
+  max-width: 40%;
+  margin: 0 auto;
 }
 
-.portfolio-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-img {
-  background: url(../img/placeholder-portfolio.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 450px;
-} 
-
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
+.imprint-content { 
+  font-size: 1.5em;
+  flex-direction: column
+  display: inline-flex;
 }
 
 @media only screen and (max-width: 786px) {
-  .hero-area {
-    min-width: 280px;
-    margin: 2rem 7rem;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-    align-self: center;
-  }
-
-  .hero-image {
-    height: 150px;
-    margin-bottom: 2rem;
-  }
-
-  .text-left {
-    padding: 0;
-  }
-
   nav {
     flex-direction: column;
     padding: 1rem;
