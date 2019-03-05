@@ -1,4 +1,4 @@
-This is a portfolio for representing myself on the internet. 
+This is a Portfolio, representing myself on the internet. 
 
 Deployed by netlify.
 
