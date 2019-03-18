@@ -13,12 +13,13 @@ body {
 }
 
 h2 {
-  margin-bottom: 0;
+  color: #333;
 }
 
 span {
   color: #335C81;
   font-size: 14px;
+  display: block;
 }
 
 .box-shadow {
@@ -28,6 +29,10 @@ span {
 .border-radius {
   border-radius: 25px;
   background: #fff;
+}
+
+.blue-bg {
+  background: #F7FCFF;
 }
 
 .hero-wrapper {
@@ -103,14 +108,18 @@ nav {
 .content-wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .cv-card {
   display: flex;
+  flex-direction: column;
   margin: 4rem;
-  padding: 4rem;
+  padding: 3rem;
   word-wrap: break-word;
-  width: 500px;
+  max-width: 450px;
+  height: 70%;
+
 }
 
 .timeline {
@@ -118,8 +127,14 @@ nav {
   border-left: 1px solid #223344;
 }
 
-.timeline-entry {
-  padding-bottom: 0.85rem;
+.timeline-headline {
+  margin-bottom: 0;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
 }
 
 .timeline-item::before {
@@ -137,28 +152,47 @@ nav {
 
 .skills-wrapper {
   display: flex;
-  margin: 4em 4em 0 4rem; 
+  margin: 4em 4em 0 4rem;
   flex-direction: column;
   align-items: flex-start;
-  width: 15rem;
+}
+
+.skills-headline {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .skills-card {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
-  padding: 2rem;
-  width: 7rem;
-  height: 7rem;
+  padding: 4rem;
+  max-width: 250px;
 }
 
 .skills-card:nth-child(even) {
-  background: red;
   align-self: flex-end;
+}
+
+.skills-card-list {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-card-list-item {
+  padding: 0.5rem 0;
+}
+
+.row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 4rem; 
+  margin-top: 4rem;
 }
 
 .btn--footer {
