@@ -78,13 +78,10 @@ nav {
   flex-direction: column;
 }
 
-.portfolio-img {
-  background: url(../img/placeholder-portfolio.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 450px;
-} 
+.portfolio-description {
+  color: #335C81;
+  width: 75%;
+}
 
 footer {
   display: flex;
