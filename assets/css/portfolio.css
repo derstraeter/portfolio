@@ -19,6 +19,7 @@ h2 {
 span {
   color: #335c81;
   font-size: 14px;
+  margin: 1rem 0;
 }
 
 .box-shadow {
@@ -71,6 +72,15 @@ nav {
   margin: 4rem;
   padding: 4rem;
   max-width: 710px;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item-image {
+  width: 600px;
 }
 
 .portfolio-content {
