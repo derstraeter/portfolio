@@ -69,9 +69,23 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 4rem;
+  margin: 2rem;
   padding: 4rem;
-  max-width: 710px;
+  max-width: 650px;
+}
+
+.portfolio-item-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem; 
+  padding: 2rem;
+  max-width: 715px;
+  text-align: center;
+}
+
+.portfolio-item-intro p {
+  align-self: center;
 }
 
 .image-wrapper {
@@ -79,8 +93,9 @@ nav {
   flex-direction: column;
 }
 
-.portfolio-item-image {
-  width: 600px;
+.image {
+  max-width: 600px;
+  width: 100%;
 }
 
 .portfolio-content {
@@ -90,7 +105,7 @@ nav {
 
 .portfolio-description {
   color: #335C81;
-  width: 75%;
+  max-width: 90%;
 }
 
 footer {
