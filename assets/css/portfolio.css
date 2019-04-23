@@ -22,6 +22,12 @@ span {
   margin: 1rem 0;
 }
 
+iframe {
+  margin-top: 1rem;
+  max-width: 100%;
+
+}
+
 .box-shadow {
   box-shadow: -2px 2px 12px rgba(0, 0, 0, 20%);
 }
