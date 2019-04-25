@@ -80,6 +80,10 @@ span {
   cursor: pointer;
 }
 
+.e-mail:hover {
+  color: #0066ff;
+}
+
 nav {
   display: flex;
   flex-wrap: nowrap;
@@ -108,10 +112,32 @@ nav {
   margin: 0;
 }
 
+.btn--download {
+  width: 120px;
+}
+
+.btn--download_svg {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.btn--download_svg:hover {
+  background: #F7FCFF;
+  fill: #0066ff;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.cv-card-intro {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cv-card {
@@ -215,6 +241,9 @@ footer {
 
 
 @media only screen and (max-width: 786px) {
+  .btn--download {
+    display: none;
+  }
   .hero-area {
     min-width: 280px;
     margin: 2rem 7rem;
