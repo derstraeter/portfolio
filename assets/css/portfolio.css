@@ -12,8 +12,13 @@ body {
   background-position: center;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  color: #333;
+}
+
+
 h2 {
-  margin-bottom: 0;
+  margin-bottom: 0; 
 }
 
 span {
@@ -36,13 +41,17 @@ iframe {
   background: #fff;
 }
 
+.with-margin {
+  margin: 1rem 0; 
+}
+
 .btn--primary {
   text-decoration: none;
   display: inline-block;
   align-self: center;
   padding: 0.65em 1.5em;
   background: #fff;
-  color: #223344;
+  color: #333;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -108,9 +117,15 @@ nav {
   flex-direction: column;
 }
 
+.portfolio-headline {
+  margin: 0 auto;
+  color: #333;
+}
+
 .portfolio-description {
   color: #335C81;
   max-width: 90%;
+  margin-bottom: 0;
 }
 
 footer {
