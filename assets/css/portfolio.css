@@ -190,4 +190,7 @@ footer {
     width: 110px;
     margin-top: 2rem;
   }
+  .portfolio-row {
+    display: none;
+  }
 }
