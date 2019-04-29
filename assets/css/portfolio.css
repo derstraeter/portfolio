@@ -45,6 +45,11 @@ iframe {
   margin: 1rem 0; 
 }
 
+.centered-flex {
+  align-items: center;
+}
+
+
 .btn--primary {
   text-decoration: none;
   display: inline-block;
@@ -79,6 +84,14 @@ nav {
   align-items: center;
 }
 
+.portfolio-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
 .portfolio-item {
   display: flex;
   flex-direction: row;
@@ -86,6 +99,15 @@ nav {
   margin: 2rem;
   padding: 4rem;
   max-width: 650px;
+}
+
+.portfolio-item-teaser {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem 0;
 }
 
 .portfolio-item-intro {
@@ -110,6 +132,10 @@ nav {
 .image {
   max-width: 600px;
   width: 100%;
+}
+
+.image .split {
+  width: 50%;
 }
 
 .portfolio-content {
