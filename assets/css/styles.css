@@ -1,293 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-* {
-  font-family: 'Lato', sans-serif;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  background: #F7FCFF;
-  background-image: url(../svg/bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  color: #333;
+h1,h2,h3,h4 {
+  font-family: 'Poppins', sans-serif;
 }
 
-a {
-  color: #0066ff;
+p, span {
+  font-family: 'Roboto Slab', serif;
 }
 
-span {
-  color: #335c81;
-  font-size: 14px;
-}
-.box-shadow {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.border-radius {
-  border-radius: 25px;
-  background: #fff;
-}
-
-.blue-bg {
-  background: #F7FCFF;
-}
-
-.hero-wrapper {
+.container {
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
-.hero-area {
+.section-title {
+  width:10%;
+  height: 100vh;
+}
+
+.section-title h1 {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  align-self: center;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.about-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: wrap row;
+  height: 100vh;
+}
+
+.item {
+  border: 2px solid #000;
+  box-sizing: border-box;
   padding: 2rem;
-  margin-top: 2rem;
 }
 
-.hero-image {
-  background-image: url(../img/profile-pic.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 100%;
-  width: 200px;
+.kontakt {
+  width: 33%;
 }
 
-.text-left h1 {
-  margin-top: 0;
-  color: #223344;
+.vita{
+  width: 67%;
 }
 
-.text-left {
-  display: inline-block;
-  padding-left: 5rem;
-  list-style-type: none;
-  word-wrap: wrap-word;
-  color: #223344;
+.design-skills { 
+  flex: 0 0 33%;
+  width: 33%;
 }
 
-.e-mail {
-  text-decoration: none;
-  color: #223344;
-  cursor: pointer;
+.work-skills {
+  flex: 0 0 33%;
+  width: 33%;
 }
 
-.e-mail:hover {
-  color: #0066ff;
+.other-skills {
+  flex: 0 0 34%;
+  width: 33%;
 }
 
-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  padding: 4rem;
+.scroll-down {
+  width: 100%;
   text-align: center;
 }
 
-.btn--primary {
-  text-decoration: none;
-  display: inline-block;
-  align-self: center;
-  padding: 0.65em 1.5em;
-  background: #fff;
-  color: #223344;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.btn--primary:hover {
-  background: #F7FCFF;
-  color: #335C81;
-}
-
-.btn--primary:first-of-type {
-  margin: 0;
-}
-
-.btn--download_svg {
-  background: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  padding: 1rem;
-}
-
-.btn--download_svg:hover {
-  background: #F7FCFF;
-  fill: #0066ff;
-}
-
-.content-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.cv-card-intro {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cv-card {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem;
-  padding: 3rem;
-  word-wrap: break-word;
-  max-width: 450px;
-  height: 70%;
-
-}
-
-.timeline {
-  list-style-type: none;
-  border-left: 1px solid #223344;
-}
-
-.timeline-headline {
-  margin-bottom: 0;
-}
-
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5em 0;
-}
-
-.timeline-item::before {
-  position: relative;
-  display: block;
-  content: "";
-  border: 1px solid #223344;
-  border-radius: 100%;
+.scroll-down svg{
   height: 25px;
-  width: 25px;
-  background: #fff;
-  top: 3em;
-  left: -3.4rem;
 }
-
-.skills-wrapper {
-  display: flex;
-  margin: 4em 4em 0 4rem;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.skills-headline {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.skills-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-  padding: 4rem;
-  max-width: 250px;
-}
-
-.skills-card:nth-child(even) {
-  align-self: flex-end;
-}
-
-.skills-card-list {
-  margin: 0;
-  padding: 0;
-}
-
-.skills-card-list-item {
-  padding: 0.5rem 0;
-}
-
-.row {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: flex-start;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-}
-
-.btn--footer {
-  text-decoration: none;
-  align-self: center;
-  padding: 0.65em 1.5em;
-  background: #fff;
-  color: #223344;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.btn--footer:hover {
-  background: #F7FCFF;
-  color: #335C81;
-}
-
-
-@media only screen and (max-width: 786px) {
-  .btn--download {
-    display: none;
-  }
-  .hero-area {
-    min-width: 280px;
-    margin: 2rem 7rem;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-    align-self: center;
-  }
-
-  .hero-image {
-    height: 150px;
-    margin-bottom: 2rem;
-  }
-
-  .text-left {
-    padding: 0;
-  }
-
-  nav {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  nav a {
-    word-wrap: break-word;
-    width: 110px;
-    margin-top: 2rem;
-  }
-
-  .content-wrapper {
-    flex-direction: column;
-  }
-
-  .cv-card {
-    margin: 3rem;
-    padding: 3rem;
-    width: auto;
-  }
-
-  .skills-wrapper {
-    margin: 2rem 3rem;
-    width: auto;
-  }
-
-  .skills-card {
-    margin-bottom: 1.5rem;
-  }
-
-  .timeline-entry::before {
-    margin-left: 5.7rem;
-  }
-}
+/* grow shrink basis */
