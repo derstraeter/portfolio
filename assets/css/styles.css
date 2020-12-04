@@ -23,6 +23,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
 	line-height: 1;
 }
@@ -46,8 +51,12 @@ h1,h2,h3,h4 {
   font-family: 'Poppins', sans-serif;
 }
 
-p, span {
+p, span, a {
   font-family: 'Roboto Slab', serif;
+}
+
+a {
+  color: black;
 }
 
 .container {
@@ -56,18 +65,23 @@ p, span {
 }
 
 .section-title {
-  width:10%;
-  height: 100vh;
+  height: 103.45vh;
 }
 
 .section-title h1 {
   transform: rotate(-90deg);
   font-size: 2rem;
   align-self: center;
+  color: blue;
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 .about-container {
@@ -80,11 +94,21 @@ h1 {
 .item {
   border: 2px solid #000;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .kontakt {
   width: 33%;
+}
+
+.kontakt img { 
+  display: inline;
+  height: 125px;
+  margin-bottom: 0.5rem;
+}
+
+.kontaktdaten a{ 
+  margin-top: 1rem;
 }
 
 .vita{
@@ -111,7 +135,12 @@ h1 {
   text-align: center;
 }
 
+.scroll-down h3 {
+  font-size: 1.5rem;
+  height: 10%;
+}
+
 .scroll-down svg{
   height: 25px;
+  margin-top: 1rem;
 }
-/* grow shrink basis */
