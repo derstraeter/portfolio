@@ -47,12 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
 }
 
 p, span, a {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Raleway', serif;
 }
 
 a {
@@ -62,10 +62,6 @@ a {
 .container {
   display: flex;
   width: 100%;
-}
-
-.section-title {
-  height: 103.45vh;
 }
 
 .section-title h1 {
@@ -88,7 +84,6 @@ li {
   width: 100%;
   display: flex;
   flex-flow: wrap row;
-  height: 100vh;
 }
 
 .item {
@@ -101,21 +96,21 @@ li {
   width: 33%;
 }
 
-.kontakt img { 
+.kontakt img {
   display: inline;
   height: 125px;
   margin-bottom: 0.5rem;
 }
 
-.kontaktdaten a{ 
-  margin-top: 1rem;
+.kontaktdaten {
+margin: 1rem 0 0 0;
 }
 
 .vita{
   width: 67%;
 }
 
-.design-skills { 
+.design-skills {
   flex: 0 0 33%;
   width: 33%;
 }
